@@ -1,7 +1,7 @@
 FROM node:14
 
 # Create app directory
-WORKDIR /app
+WORKDIR /
 
 COPY ./ ./
 
