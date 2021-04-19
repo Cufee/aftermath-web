@@ -1,13 +1,20 @@
-FROM node:14-alpine 
+FROM mhart/alpine-node:12
 
-WORKDIR /usr/src/app 
-# the entire project is copied 
-COPY / ./ 
-RUN npm install 
-RUN npm run build 
+# Create app directory
+WORKDIR /app
 
-CMD ["node", "__sapper__/build"] 
+COPY package.json .
+COPY package-lock.json .
+RUN npm ci --prod
 
-EXPOSE 3000 
+COPY src src
+COPY static static
+COPY __sapper__ __sapper__
 
-ENV HOST=0.0.0.0
+RUN ls src
+
+ENV PORT=3111
+
+EXPOSE 3111
+
+CMD ["node", "__sapper__/build"]
