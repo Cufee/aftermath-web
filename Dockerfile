@@ -11,8 +11,6 @@ COPY src src
 COPY static static
 COPY __sapper__ __sapper__
 
-RUN ls src
-
 ENV PORT=3111
 
 EXPOSE 3111
