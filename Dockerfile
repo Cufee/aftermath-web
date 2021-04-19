@@ -1,15 +1,31 @@
-FROM node:14
+# build the sapper app
+FROM mhart/alpine-node:12 AS build
 
-# Create app directory
-WORKDIR /
-
-COPY ./ ./
+WORKDIR /app
+COPY . .
 
 RUN npm install
 RUN npm run build
 
-ENV PORT=3111
+# install dependencies
+FROM mhart/alpine-node:12 AS deps
 
-EXPOSE 3111
+WORKDIR /app
 
-CMD [ "node", "__sapper__/build" ]
+COPY package.json .
+COPY package-lock.json .
+RUN npm ci --prod
+
+COPY static static
+COPY __sapper__ __sapper__
+
+# copy node_modules/ and other build files over
+FROM mhart/alpine-node:slim-12
+
+WORKDIR /app
+
+COPY --from=deps /app .
+
+EXPOSE 3000
+
+CMD ["node", "__sapper__/build"]
