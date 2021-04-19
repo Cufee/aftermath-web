@@ -47,7 +47,8 @@
       <Feature
         header={$_("landing.features.stats.title")}
         description={$_("landing.features.stats.description")}
-        image_url=""
+        image_url="./images/Stats.jpg"
+        secondary={true}
       />
     </div>
 
@@ -55,7 +56,8 @@
       <Feature
         header={$_("landing.features.replays.title")}
         description={$_("landing.features.replays.description")}
-        image_url=""
+        image_url="./images/Replays.jpg"
+        secondary={true}
       />
     </div>
 
@@ -63,7 +65,8 @@
       <Feature
         header={$_("landing.features.leaderboards.title")}
         description={$_("landing.features.leaderboards.description")}
-        image_url=""
+        image_url="./images/Leaderboards.jpg"
+        secondary={true}
       />
     </div>
   </div>
@@ -97,7 +100,6 @@
   }
 
   .feature {
-    min-height: 25vh;
     height: 100%;
     width: 100%;
   }

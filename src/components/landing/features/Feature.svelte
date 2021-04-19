@@ -3,6 +3,7 @@
 
   export let color;
   export let header;
+  export let secondary;
   export let image_url;
   export let description;
   export let button_text;
@@ -29,23 +30,27 @@
 </script>
 
 <div class="container">
-  <div class="section header shadow" style="background-color: {color}">
+  <div
+    class:secondary
+    class="section header shadow"
+    style="background-color: {color}"
+  >
     <h2>
       {header}
     </h2>
   </div>
   {#if image_url}
-    <div class="section image shadow">
+    <div class="section image shadow" class:secondary>
       <img src={image_url} alt="" />
     </div>
   {/if}
-  <div class="section description">
+  <div class="section description" class:secondary>
     <p>
       {description}
     </p>
   </div>
   {#if check_btn()}
-    <div class="section link">
+    <div class="section link" class:secondary>
       <a href={button_link}><button class="shadow">{button_text}</button></a>
     </div>
   {/if}
@@ -75,10 +80,10 @@
     justify-self: center;
     align-self: center;
     margin: auto;
-
+    /* background-color: #51c4d3; */
     background-color: #132c33;
-    border-radius: 0.5rem;
     color: white;
+    border-radius: 0.5rem;
     padding: 0.5rem 0rem;
   }
 
@@ -116,7 +121,6 @@
     color: white;
     background-color: #51c4d3;
   }
-
   button {
     justify-self: center;
     align-self: center;
@@ -129,5 +133,19 @@
 
     padding: 0.5rem 1rem 0.5rem 1rem;
     font-size: 1rem;
+  }
+
+  .secondary.section {
+    width: 70%;
+  }
+  .secondary.image,
+  .secondary img {
+    height: 100px;
+  }
+  .secondary.header {
+    background-color: #132c33;
+    padding: 0.25rem 0rem;
+    font-size: 0.9rem;
+    color: white;
   }
 </style>
