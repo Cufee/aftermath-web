@@ -6,6 +6,8 @@ export const landing = {
       title: "Discord Бот",
       button_text: "Добавить на сервер!",
       image_url: "https://picsum.photos/200/300",
+      invite_url:
+        "https://discord.com/api/oauth2/authorize?client_id=719829369798918144&permissions=67497024&redirect_uri=https%3A%2F%2Faftermath.link%2F&scope=bot",
       description:
         "Aftermath это кастомизируемая статистика в картинке не выходя из дискорда, обработка ваших реплеев с уникальным рейтингом для каждого игрока и возможность отслеживать свой рост в игре без лишних приложений и сайтов. Узнать больше можно пригласив бота на свой сервер!",
     },

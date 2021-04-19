@@ -5,6 +5,8 @@ export const landing = {
     bot: {
       title: "Discord Bot",
       button_text: "Add to Discord!",
+      invite_url:
+        "https://discord.com/api/oauth2/authorize?client_id=719829369798918144&permissions=67497024&redirect_uri=https%3A%2F%2Faftermath.link%2F&scope=bot",
       image_url: "https://picsum.photos/200/300",
       description:
         "Aftermath generates beautiful and customizable images of your performance in battle, analyzes your replays with unique player ratings and allows you to track in-game progress without leaving Discord. Learn more by inviting Aftermath to your server!",

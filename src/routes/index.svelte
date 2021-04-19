@@ -2,9 +2,6 @@
   import Feature from "../components/landing/features/Feature.svelte";
   import { _ } from "svelte-i18n";
 
-  const bot_invite =
-    "https://discord.com/api/oauth2/authorize?client_id=719829369798918144&permissions=67497024&redirect_uri=https%3A%2F%2Faftermath.link%2F&scope=bot";
-
   const live_stats_tmp = "https://aftermath-live-stats.herokuapp.com/";
 </script>
 
@@ -29,7 +26,7 @@
         description={$_("landing.features.bot.description")}
         image_url="./images/Discord.jpg"
         button_text={$_("landing.features.bot.button_text")}
-        button_link={bot_invite}
+        button_link={$_("landing.features.bot.invite_url")}
       />
     </div>
 
