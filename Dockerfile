@@ -7,7 +7,6 @@ COPY package.json .
 COPY package-lock.json .
 RUN npm ci --prod
 
-COPY src src
 COPY static static
 COPY __sapper__ __sapper__
 
