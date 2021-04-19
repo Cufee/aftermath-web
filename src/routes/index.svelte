@@ -27,7 +27,7 @@
       <Feature
         header={$_("landing.features.bot.title")}
         description={$_("landing.features.bot.description")}
-        image_url={$_("landing.features.bot.image_url")}
+        image_url="./images/Discord.jpg"
         button_text={$_("landing.features.bot.button_text")}
         button_link={bot_invite}
       />
@@ -37,7 +37,7 @@
       <Feature
         header={$_("landing.features.widget.title")}
         description={$_("landing.features.widget.description")}
-        image_url={$_("landing.features.widget.image_url")}
+        image_url="./images/OBS.jpg"
         button_text={$_("landing.features.widget.button_text")}
         button_link={live_stats_tmp}
       />
@@ -47,7 +47,7 @@
       <Feature
         header={$_("landing.features.stats.title")}
         description={$_("landing.features.stats.description")}
-        image_url={$_("landing.features.stats.image_url")}
+        image_url=""
       />
     </div>
 
@@ -55,7 +55,7 @@
       <Feature
         header={$_("landing.features.replays.title")}
         description={$_("landing.features.replays.description")}
-        image_url={$_("landing.features.replays.image_url")}
+        image_url=""
       />
     </div>
 
@@ -63,7 +63,7 @@
       <Feature
         header={$_("landing.features.leaderboards.title")}
         description={$_("landing.features.leaderboards.description")}
-        image_url={$_("landing.features.leaderboards.image_url")}
+        image_url=""
       />
     </div>
   </div>

@@ -14,10 +14,10 @@
   }
 
   var check_img = () => {
-    if (!image_url.includes("://")) {
-      return null;
+    if (image_url.match(/\.(jpeg|jpg|gif|png)$/) != null) {
+      return image_url;
     }
-    return image_url;
+    return null;
   };
 
   var check_btn = () => {
