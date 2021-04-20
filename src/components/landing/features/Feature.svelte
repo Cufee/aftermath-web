@@ -30,7 +30,7 @@
 <div class="container">
   <div
     class:secondary
-    class="section header shadow"
+    class="section header "
     style="background-color: {color}"
   >
     <h2>
@@ -58,6 +58,8 @@
   h2 {
     margin: 0 0 0.25rem 0;
     padding: 0;
+
+    font-weight: 600;
   }
 
   .container {
@@ -84,7 +86,8 @@
 
     border-radius: 0.5rem;
     padding: 0.5rem 0rem;
-    width: 70%;
+
+    width: 75%;
   }
 
   .image {
@@ -103,6 +106,7 @@
 
   .description {
     margin: 0rem 1rem;
+    width: 75%;
   }
 
   .link {
@@ -146,5 +150,8 @@
     padding: 0.25rem 0rem;
     font-size: 0.9rem;
     color: white;
+  }
+  .secondary h2 {
+    font-weight: 500;
   }
 </style>

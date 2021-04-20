@@ -18,7 +18,6 @@
       {@html $_("landing.slogan")}
     </h2>
   </div>
-  <div class="section strike" />
   <div class="section features">
     <div class="feature">
       <Feature
@@ -70,6 +69,11 @@
 </div>
 
 <style>
+  h2,
+  h1 {
+    margin: 0;
+  }
+
   .container {
     gap: 2rem;
     display: grid;
@@ -95,13 +99,6 @@
   .feature {
     height: 100%;
     width: 100%;
-  }
-
-  .strike {
-    width: 80%;
-    height: 4px;
-    background-color: lightgray;
-    border-radius: 4px;
   }
 
   h1 {
