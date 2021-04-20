@@ -61,6 +61,12 @@
     width: 60%;
   }
 
+  @media (max-width: 600px) {
+    .description {
+      width: 80%;
+    }
+  }
+
   p {
     text-align: justify;
     padding: 0;

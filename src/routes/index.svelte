@@ -79,11 +79,6 @@
     align-items: center;
   }
 
-  .section * {
-    padding: 0;
-    margin: 0;
-  }
-
   .description {
     text-align: center;
   }

@@ -6,8 +6,6 @@
   export let segment;
 </script>
 
-<link rel="stylesheet" href="global.css" />
-
 <body>
   <Nav {segment} />
 
@@ -25,7 +23,6 @@
     position: relative;
     max-width: 64em;
     background-color: white;
-    padding: 2em;
     margin: 0 auto;
     box-sizing: border-box;
   }

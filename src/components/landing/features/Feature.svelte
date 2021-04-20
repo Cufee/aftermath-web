@@ -61,6 +61,7 @@
   }
 
   .container {
+    min-width: none;
     align-content: start;
     text-align: center;
     display: grid;

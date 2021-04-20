@@ -67,6 +67,12 @@
     /* background-color: #eeebdd; */
   }
 
+  @media (max-width: 480px) {
+    nav {
+      display: none;
+    }
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -139,18 +145,5 @@
     outline: none;
     color: white;
     background-color: #51c4d3;
-  }
-
-  .search {
-    position: absolute;
-    left: 50%;
-    min-width: 200px;
-    transform: translatex(-50%);
-  }
-  .search:hover {
-    background-color: inherit;
-  }
-  .search input {
-    margin: 1rem;
   }
 </style>
