@@ -38,9 +38,11 @@
     </h2>
   </div>
   {#if image_url}
-    <div class="section image shadow" class:secondary>
-      <img src={image_url} alt="" />
-    </div>
+    <div
+      class="section image shadow"
+      class:secondary
+      style="background-image: url({image_url})"
+    />
   {/if}
   <div class="section description" class:secondary>
     <p>
@@ -95,13 +97,9 @@
     border-radius: calc(0.5rem + 3px);
     justify-self: center;
     height: 200px;
-  }
-  .image img {
-    width: 100%;
-    height: 200px;
 
-    border-radius: 0.5rem;
-    object-fit: cover;
+    background: center center;
+    background-size: cover;
   }
 
   .description {
