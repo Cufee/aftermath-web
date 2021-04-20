@@ -87,7 +87,7 @@
   .section.features {
     gap: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     justify-items: center;
     align-items: center;
   }
@@ -110,6 +110,12 @@
     font-weight: 700;
     text-align: center;
     z-index: 1;
+  }
+
+  @media (max-width: 480px) {
+    .section.features {
+      grid-template-columns: 1fr;
+    }
   }
 
   @media (min-width: 480px) {

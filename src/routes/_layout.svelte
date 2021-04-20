@@ -16,7 +16,7 @@
 
 <style>
   main {
-    max-width: 64em;
+    max-width: 84em;
     background-color: white;
     margin: 2rem auto;
   }
