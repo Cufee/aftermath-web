@@ -61,7 +61,6 @@
   }
 
   .container {
-    min-width: none;
     align-content: start;
     text-align: center;
     display: grid;
@@ -69,6 +68,7 @@
     grid-auto-columns: 1fr;
     grid-gap: 1rem;
     height: 100%;
+    grid-template-rows: auto auto minmax(auto, 1fr) auto;
   }
 
   .section {
