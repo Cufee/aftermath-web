@@ -61,28 +61,29 @@
   }
 
   .container {
-    display: grid;
-    grid-gap: 1rem;
-    align-items: start;
+    align-content: start;
     text-align: center;
+    display: grid;
+
+    grid-auto-columns: 1fr;
+    grid-gap: 1rem;
+    height: 100%;
   }
 
   .section {
     justify-self: center;
-    align-self: center;
-    grid-template-rows: repeat(auto-fit, 1fr);
     width: 80%;
   }
 
   .header {
-    justify-self: center;
-    align-self: center;
-    margin: auto;
-    /* background-color: #51c4d3; */
     background-color: #132c33;
+    justify-self: center;
     color: white;
+    margin: auto;
+
     border-radius: 0.5rem;
     padding: 0.5rem 0rem;
+    width: 70%;
   }
 
   .image {
@@ -100,9 +101,11 @@
   }
 
   .description {
-    justify-self: center;
-    align-self: center;
     margin: 0rem 1rem;
+  }
+
+  .link {
+    height: 100%;
   }
 
   p {
@@ -133,9 +136,6 @@
     font-size: 1rem;
   }
 
-  .secondary.section {
-    width: 70%;
-  }
   .secondary.image,
   .secondary img {
     height: 100px;

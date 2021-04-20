@@ -113,6 +113,7 @@
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
+    z-index: 1;
   }
 
   @media (min-width: 480px) {

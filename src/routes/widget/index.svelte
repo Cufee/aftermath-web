@@ -74,8 +74,8 @@
   }
   button:hover {
     outline: none;
-    color: white;
-    background-color: #51c4d3;
+    color: black;
+    background-color: #d8e3e7;
   }
   button {
     justify-self: center;
@@ -83,9 +83,10 @@
     margin: auto;
     border: none;
 
-    background-color: #d8e3e7;
     border-radius: 0.5rem;
-    color: black;
+
+    color: white;
+    background-color: #51c4d3;
 
     padding: 0.5rem 1rem 0.5rem 1rem;
     font-size: 1rem;
