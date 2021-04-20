@@ -17,49 +17,59 @@
 </script>
 
 <nav>
-  <ul>
-    <li class="landing">
-      <a aria-current={segment === undefined ? "page" : undefined} href="."
-        >Aftermath</a
-      >
-    </li>
+  <div id="desktop">
+    <ul>
+      <li class="landing">
+        <a aria-current={segment === undefined ? "page" : undefined} href="."
+          >Aftermath</a
+        >
+      </li>
 
-    <!-- <li class="search"><input type="text" maxlength="16" /></li> -->
+      <!-- <li class="search"><input type="text" maxlength="16" /></li> -->
 
-    <li>
-      <a aria-current={segment === "bot" ? "page" : undefined} href="bot"
-        >{$_("nav.bot")}</a
-      >
-    </li>
+      <li>
+        <a aria-current={segment === "bot" ? "page" : undefined} href="bot"
+          >{$_("nav.bot")}</a
+        >
+      </li>
 
-    <!-- for the widget link, we're using rel=prefetch so that Sapper prefetches
+      <!-- for the widget link, we're using rel=prefetch so that Sapper prefetches
 		     the widget data when we hover over the link or tap it on a touchscreen -->
-    <li>
-      <a
-        aria-current={segment === "widget" ? "page" : undefined}
-        rel="prefetch"
-        href="widget">{$_("nav.widget")}</a
-      >
-    </li>
+      <li>
+        <a
+          aria-current={segment === "widget" ? "page" : undefined}
+          rel="prefetch"
+          href="widget">{$_("nav.widget")}</a
+        >
+      </li>
 
-    <li class="login">
-      <a href="login" aria-current={segment === "login" ? "page" : undefined}
-        >{$_("nav.login")}</a
-      >
-    </li>
+      <li class="login">
+        <a href="login" aria-current={segment === "login" ? "page" : undefined}
+          >{$_("nav.login")}</a
+        >
+      </li>
 
-    <li
-      class="language"
-      on:click={() => {
-        locale === "RU" || !locale ? (locale = "EN") : (locale = "RU");
-      }}
-    >
-      <span>{locale === "RU" ? "Русский" : "English"}</span>
-    </li>
-  </ul>
+      <li
+        class="language"
+        on:click={() => {
+          locale === "RU" || !locale ? (locale = "EN") : (locale = "RU");
+        }}
+      >
+        <span>{locale === "RU" ? "Русский" : "English"}</span>
+      </li>
+    </ul>
+  </div>
+  <div id="mobile">There is no nav menu for small devices yet</div>
 </nav>
 
 <style>
+  #mobile {
+    display: none;
+    text-align: center;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
   nav {
     border-bottom: 1px solid rgba(255, 62, 0, 0.1);
     font-weight: 300;
@@ -68,8 +78,11 @@
   }
 
   @media (max-width: 480px) {
-    nav {
+    #desktop {
       display: none;
+    }
+    #mobile {
+      display: block;
     }
   }
 
