@@ -81,12 +81,13 @@
 
   .description {
     text-align: center;
+    margin: 0 2rem;
   }
 
   .section.features {
     gap: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
     justify-items: center;
     align-items: center;
   }
