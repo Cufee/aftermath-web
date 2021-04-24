@@ -1,5 +1,5 @@
 <script>
-  var image_url = "./images/Stats.jpg";
+  var image_url = "./images/Discord.jpg";
   import { _ } from "svelte-i18n";
 </script>
 
