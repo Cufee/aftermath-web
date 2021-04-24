@@ -139,8 +139,7 @@
     font-size: 1rem;
   }
 
-  .secondary.image,
-  .secondary img {
+  .secondary.image {
     height: 100px;
   }
   .secondary.header {
